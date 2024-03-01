@@ -1,0 +1,9 @@
+{
+  "openHab" : {
+    "serverAdress" : "http://192.168.99.70:8080",
+    "AccesHeader"  : {
+      "Content-Type": "text/plain",
+      "Accept": "applicatoin/json"
+    }
+  }
+}
