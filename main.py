@@ -1,3 +1,6 @@
+import SettingHandler
+
+
 def testPackages():
     try:
         import ErrorHandler
@@ -20,11 +23,14 @@ def testPackages():
         import SettingHandler
     except Exception as error:
         ErrorHandler.fatal(f"unable to load module ({error})")
+    try:
+        import os
+    except Exception as error:
+        ErrorHandler.fatal(f"unable to load module ({error})")
     log.msg("all packages loaded")
 
 def testNetwork():
-    pass
-
+    ip = SettingHandler.get(["openHab","serverAdress"])
 
 
 if __name__ == "__main__":

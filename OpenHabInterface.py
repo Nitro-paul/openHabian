@@ -21,10 +21,12 @@ class Action():
     def getUrl(self) -> str:
         return self.url
 
-    def makeUrl(self, itemName: str) -> None:
-        openHabAdress = SettingHandler.get(["openHab", "serverAdress"])
+    def makeUrl(self, itemI: int) -> None:
+        openHabAdress = "http://"
+        openHabAdress += SettingHandler.get(["openHab", "serverAdress"])
+        openHabAdress += SettingHandler.get(["openHab", "serverPort"])
         openHabAdress += f'/rest/items/'
-        openHabAdress += itemName
+        openHabAdress += SettingHandler.get(["items", itemI, "name"])
         self.url = openHabAdress
 
     def makeHeader(self) -> None:
@@ -40,8 +42,8 @@ class Action():
     def requestValue(self) -> str:
         pass
 
-    def SendRequestAutomatic(self, itemName: str, data: str):
-        self.makeUrl(itemName=itemName)
+    def SendRequestAutomatic(self, itemI: int, data: str):
+        self.makeUrl(itemI=itemI)
         self.makeHeader()
         if self.shallowTest():
             self.sendRequest(data=data)
