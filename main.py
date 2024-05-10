@@ -23,6 +23,8 @@ def testPackages():
     log.msg("all packages loaded")
 
 def testNetwork():
+    pass
+
 
 
 if __name__ == "__main__":
