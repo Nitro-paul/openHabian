@@ -1,9 +1,21 @@
 {
+  "config" : {
+    "mode" : "testing"
+  },
   "openHab" : {
     "serverAdress" : "http://192.168.99.70:8080",
     "AccesHeader"  : {
       "Content-Type": "text/plain",
       "Accept": "applicatoin/json"
     }
+  },
+  "LocalDataGrab" : {
+    "modprobe" : {
+      "path" : "/sys/bus/w1/devices",
+      "devicePath" : "28-01203319e168",
+      "device" : "w1-slave",
+      "fallbackData" : 10
+    },
+    "readInterval" : 1000
   }
 }

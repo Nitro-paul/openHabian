@@ -8,7 +8,6 @@ with open("data/settings.json", "r") as f:
 jdata : dict
 jdata = json.loads(rawdata)
 
-
 def get(path: list):
     global jdata
     upper = jdata[path[0]]

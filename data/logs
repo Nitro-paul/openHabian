@@ -1,0 +1,16 @@
+2024-05-04 13:38:01.326668,fatal,  unable to load log module (No module named 'lok')
+2024-05-04 13:38:04.270320,fatal,  unable to load log module (No module named 'lok')
+2024-05-04 13:38:20.389766,fatal,  unable to load localDataGrab module  ({error})
+2024-05-04 13:38:29.960657,fatal,  unable to load localDataGrab module  (No module named 'LocalDataGrab')
+2024-05-04 13:45:02.051982,fatal,  unable to load module  (No module named 'LocalDataGrab')
+2024-05-04 13:45:21.686602,fatal,  unable to load module  (No module named 'LocalDataGrab')
+2024-05-04 13:45:46.353491,fatal,  unable to load module  (No module named 'LocalDataGrab')
+2024-05-04 13:49:07.340654,default,all packages loadet
+2024-05-04 13:49:20.159299,default,all packages loaded
+2024-05-04 13:49:43.657679,    default,all packages loaded
+2024-05-04 13:50:21.689640,    default,    all packages loaded
+2024-05-04 13:50:31.620725,    fatal,    unable to load module (No module named 'OpensHabInterface')
+2024-05-04 13:51:44.995799,	fatal,	unable to load module (No module named 'OpensHabInterface')
+2024-05-04 13:51:48.537004,	fatal,	unable to load module (No module named 'OpensHabInterface')
+2024-05-04 13:51:51.383438,	fatal,	unable to load module (No module named 'OpensHabInterface')
+2024-05-04 13:51:57.807281,	default,	all packages loaded

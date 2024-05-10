@@ -35,6 +35,7 @@ class Action():
             requests.post(url=self.url, headers=self.header, data=data)
         except Exception:
             ErrorHandler.fatal("unable to act on openhab server")
+        log.msg("request successful")
 
     def requestValue(self) -> str:
         pass

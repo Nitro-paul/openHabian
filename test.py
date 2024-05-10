@@ -35,4 +35,4 @@ for i in range(0, int(inp)):
     num = number
     requestSending(num)
     print("set to", num)
-    time.sleep(50)
+    time.sleep(5)
